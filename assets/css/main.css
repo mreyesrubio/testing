@@ -1,0 +1,760 @@
+/*=================================================
+||				Imports 
+==================================================*/
+@import url(http://fonts.googleapis.com/css?family=Roboto:100,400);
+@import url(http://fonts.googleapis.com/css?family=Raleway:100,400,700);
+
+/*=================================================
+||				Global 
+==================================================*/
+body {
+    color: #505050;
+    font-family: 'Roboto', 'Open-Sans', sans-serif;
+    overflow-x: hidden;
+    font-size: 14px;
+}
+
+
+.btn.active.focus,
+.btn.active:focus,
+.btn.focus,
+.btn:active.focus,
+.btn:active:focus,
+.btn:focus {
+    outline: none;
+}
+
+.btn {
+    border-radius: 0;
+    letter-spacing: 2px;
+}
+
+.btn:hover {
+    transition: all 0.3s ease-in-out;
+    -webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    -ms-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+}
+
+.btn-middle {
+    background-color: transparent;
+    padding: 15px 30px;
+    border: 1px solid #8bc34a;
+    color: #5c9233;
+    margin: 25px 0px;
+}
+
+.btn-middle:hover {
+    background-color: #8bc34a;
+    color: #fff;
+    box-shadow: 0px 2px 5px #948E8E;
+}
+
+.contact-form .section-title {
+    padding: 5%;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+    font-size: 64px;
+    text-align: center;
+    color: #d91982;
+}
+
+.section-title {
+    padding: 20%;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 100;
+    font-size: 50px;
+    color: #fff;
+}
+
+.section-content-title {
+    font-family: 'Roboto';
+    font-weight: 100;
+    font-size: 60px;
+}
+
+.section-content-para {
+    font-size: 30px;
+}
+
+.section-content-para2 {
+    font-size: 20px;
+}
+
+.section-content {
+    padding: 15% 5%;
+}
+
+.dis-table {
+    display: inline-flex;
+    width: 100vw;
+}
+
+.dis-table .dis-table-cell {
+
+    display: inline-block;
+    padding: 5% 0;
+    width: 50vw;
+    float: none;
+    position: relative;
+}
+
+.color-bg {
+    background: #000000;
+}
+
+.section-bg {
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.form-control {
+    border-radius: 0px;
+    height: auto;
+    margin-bottom: 25px;
+    padding: 11px 12px;
+}
+
+.form-control:focus {
+    border-color: #DADADA;
+    -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075), 0 0 8px rgba(150, 144, 144, 0.5);
+    -moz-box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075), 0 0 8px rgba(150, 144, 144, 0.5);
+    -ms-box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075), 0 0 8px rgba(150, 144, 144, 0.5);
+    -o-box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075), 0 0 8px rgba(150, 144, 144, 0.5);
+    box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075), 0 0 8px rgba(150, 144, 144, 0.5);
+}
+
+input.empty,
+textarea.empty {
+    font-family: FontAwesome;
+    font-style: normal;
+    font-weight: normal;
+    text-decoration: inherit;
+}
+
+p {
+    letter-spacing: 0.04em;
+}
+
+.section-icon {
+    position: absolute;
+    left: 45%;
+    margin-left: -21px;
+    margin-top: 100px;
+    z-index: 999;
+}
+
+/*=================================================
+||				Navbar 
+==================================================*/
+.custom-navbar-default {
+    background-color: #ffffff;
+    border: 0px;
+    margin: 0px;
+    border-radius: 0px;
+    color: #000000;
+    padding: 30px 0px;
+    box-shadow: 0px 2px 7px rgba(62, 62, 62, 0.62);
+}
+
+.navbar-default .navbar-brand:focus,
+.navbar-default .navbar-brand:hover {
+    color: #d91982;
+}
+
+.navbar-default .navbar-nav>li>a {
+    color: #000000;
+    text-transform: uppercase;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    margin: 0px 18px;
+    padding: 18px 0px;
+    font-size: 14px;
+    text-align: center;
+
+}
+
+.navbar-default .navbar-nav>li>a:focus,
+.navbar-default .navbar-nav>li>a:hover {
+    color: #d91982;
+}
+
+.navbar-default .navbar-toggle {
+    border-color: #d91982;
+}
+
+.navbar-toggle {
+    color: #fff;
+    border-radius: 0px;
+    margin-right: 65px;
+}
+
+.navbar-default .navbar-toggle .icon-bar {
+    background-color: #d91982;
+}
+
+.navbar-default .navbar-toggle:focus,
+.navbar-default .navbar-toggle:hover {
+    background-color: transparent;
+}
+
+.navbar-default .navbar-nav>.active>a,
+.navbar-default .navbar-nav>.active>a:focus,
+.navbar-default .navbar-nav>.active>a:hover {
+    background-color: transparent;
+    color: #d91982;
+}
+
+.navbar-brand {
+    width: 205px;
+}
+
+.navbar-default .navbar-collapse {}
+
+/*-----------------------------------------------
+		navbar shrinking
+-----------------------------------------------*/
+
+nav.navbar.shrink {
+    max-height: 62px;
+    padding: 12px 0px;
+    transition: all 0.3s ease-in-out;
+    -webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    -ms-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+}
+
+nav.shrink a {
+    padding-top: 10px !important;
+    padding-bottom: 10px !important;
+    font-size: 15px;
+}
+
+nav.shrink .navbar-brand {
+    margin-top: -5px;
+}
+
+nav.shrink .navbar-toggle {
+    padding: 4px 5px;
+    margin: 8px 15px 8px 0;
+}
+
+.navbar-default.shrink .navbar-collapse {
+    border-color: transparent;
+}
+
+/*=================================================
+||				About 
+==================================================*/
+.about-bg {
+    background: url('../images/materiales.jpg');
+    background-repeat: no-repeat;
+    background-size: 85%;
+    background-position-x: 15%;
+    background-position-y: 80%;
+}
+
+#about {
+    margin-top: 25px;
+}
+
+/*=================================================
+||				Cimientos
+==================================================*/
+.cimientos .section-bg {
+    background-image: url('../images/building-materials.jpg');
+}
+
+.textoCimientos {
+    padding: 20%;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 100;
+    font-size: 50px;
+    color: #fff;
+
+}
+
+/*=================================================
+||				Trabajo
+==================================================*/
+.color-pink {
+    background-color: #d91982;
+}
+
+.trabajo .section-title {
+    font-size: 22px;
+    padding: 15%;
+    font-weight: 500;
+}
+
+.trabajo .section-bg {
+    background: url("../images/trabajo_fermathome.jpg");
+}
+
+
+/*=================================================
+||				Comodidad
+==================================================*/
+
+.comodidad .section-title {
+    padding: 5% 10% 5% 10%;
+}
+
+.comodidad .section-title {
+    color: #d91982;
+    font-size: 64px;
+    text-align: center;
+}
+
+/*=================================================
+||				Diferencias
+==================================================*/
+.diferencias .section-title {
+    font-size: 44px;
+    font-weight: bold;
+    padding: 5% 15% 5% 25%;
+}
+
+.diferencias .section-title-2 {
+    font-size: 44px;
+    font-weight: bold;
+    padding: 5% 15% 5% 25%;
+}
+
+.diferencias ul li {
+    color: #ffffff;
+    font-size: 22px;
+}
+
+.diferencias ul {
+    padding: 0 15%;
+}
+
+.diferencias .otras li {
+    color: #000000;
+    font-size: 22px;
+}
+
+.diferencias .otras {
+    padding: 0 25%;
+}
+
+/*=================================================
+||				Somos
+==================================================*/
+.somos .section-bg {
+    background: url("../images/firmas-fermat-2-alt.png");
+    background-repeat: no-repeat, no-repeat;
+
+    background-position: 51% 58%, 75% 58%;
+
+}
+.section-content-para2 span{
+    color:#e5444a;
+    font-weight: bolder;
+}
+
+/*=================================================
+||				Construyamos
+==================================================*/
+.construyamos .section-bg {
+    background-image: url('../images/building-materials-copy.jpg');
+}
+
+/*=================================================
+||				Cotiza
+==================================================*/
+
+.cotiza .section-bg {
+    background: url("../images/bread-bg1.png"), url("../images/bread-bg2.png");
+    background-repeat: no-repeat, no-repeat;
+    background-position: 51% 58%, 75% 58%;
+    background-size: 300px 300px, 240px 240px;
+}
+
+.cotiza .section-content-title {
+    color: #0f5f5c;
+    font-size: 44px;
+}
+
+.cotiza .section-content {
+    padding: 10% 10% 10% 12%;
+}
+
+.cotiza .section-datos {
+    border: 3px dotted #83a7a5;
+    margin: 5% 10%;
+    padding: 10% 10% 10% 12%;
+}
+
+.cotiza .section-content-para2 {
+    font-size: 22px;
+    padding-bottom: 3%;
+    color: #000000;
+}
+
+.cotiza .section-nombre {
+    font-size: 22px;
+    padding-bottom: 3%;
+    color: #83a7a5;
+}
+
+.datos_contacto {
+    font-size: 15px;
+    font-family: OpenSans;
+    color: #83a7a5;
+}
+
+
+/*=================================================
+||				FermatHome
+==================================================*/
+.noPadding {
+    padding: 0 !important;
+}
+
+.fermatHome-bg {
+    width: 100%;
+}
+
+/*=================================================
+||				FermatHome
+==================================================*/
+.fermatHome_espacio .section-bg {
+    background-image: url('../images/fermathome_circle.jpg');
+    background-size: auto;
+}
+
+.fermatHome_espacio .section-content {
+    padding: 10% 15% 10% 34%;
+}
+
+.fermatHome_espacio .section-content-title {
+    color: #d91982;
+}
+
+
+/*=================================================
+||				Contacto
+==================================================*/
+
+.contact .section-content {
+    color: #fff;
+}
+
+.contact .section-title {
+    padding: 10% 20%;
+}
+
+.contact-form {
+    padding: 50px 0px;
+}
+
+#contactFormResponse {
+    position: absolute;
+    width: 97%;
+    left: 15px;
+    display: block;
+    z-index: 999;
+    top: -20px;
+}
+
+/*=================================================
+||				Footer
+==================================================*/
+
+footer {
+    background-color: darkgrey;
+    color: #ffffff;
+    padding: 30px 0px;
+}
+
+footer a {
+    color: #ffffff;
+    transition: all 0.3s ease-in-out;
+    -webkit-transition: all 0.3s ease-in-out;
+    -mz-transition: all 0.3s ease-in-out;
+    -ms-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+}
+
+footer a:hover {
+    color: #d91982;
+    text-decoration: none;
+}
+
+/*=================================================
+||				Media Query
+==================================================*/
+
+
+
+/*=========================   for extra-large screen  =============================*/
+
+@media (min-width: 1366px) {
+    .section-title {
+        padding: 190px 0px;
+        margin: 0px 90px 0px 140px;
+        font-size: 90px;
+    }
+
+    .custom-navbar-default {
+        padding: 18px 0px;
+    }
+
+    .owl-carousel {
+        margin-top: 94px;
+    }
+}
+
+@media (min-width: 1500px) {
+    .section-icon {
+        left: 46%;
+        margin-left: -25px;
+    }
+
+    .section-title {
+        padding: 20% 10% 20% 25%;
+    }
+
+    .section-content {
+        padding: 10% 40% 10% 12%;
+    }
+
+    .bread .section-bg,
+    .beer .section-bg {
+        background-position-x: 62%, 80%;
+        background-size: 330px, 264px;
+    }
+}
+
+
+
+
+/*------------------------------  for small (tab) screen -------------------------*/
+
+@media (max-width: 991px) and (min-width: 768px) {
+
+    .custom-navbar-default {
+        padding: 15px 0px;
+    }
+
+    .navbar-default .navbar-nav>li>a {
+        margin: 0px 10px;
+        font-size: 12px;
+    }
+
+    nav.shrink .navbar-brand {
+        font-size: 22px;
+    }
+
+    .owl-carousel {
+        margin-top: 85px;
+    }
+
+    .owl-theme .owl-controls .owl-buttons .owl-prev {
+        right: 20%;
+    }
+
+    .owl-theme .owl-controls .owl-buttons .owl-next {
+        right: 12%;
+    }
+
+    .about-bg {
+        background-size: 98%;
+        background-position-x: 100%;
+        background-position-y: 68%;
+    }
+
+    .header-title {
+        font-size: 62px;
+    }
+
+    .section-header {
+        padding-top: 0px;
+    }
+
+    .pricing-title {
+        margin-bottom: 15px;
+        font-size: 25px;
+    }
+
+    #filter-list li {
+        font-size: 14px;
+    }
+
+    .section-title {
+        font-size: 58px;
+        padding: 20% 15%;
+    }
+
+    .contact .section-title {
+        padding: 10% 20% 20% 20%;
+    }
+
+    .section-content {
+        padding: 10% 12%;
+    }
+
+    .section-content-title {
+        font-size: 50px;
+    }
+
+
+}
+
+
+
+@media (max-width: 960px) {
+    .navbar-default .navbar-brand {
+        font-size: 24px;
+    }
+
+    .header-sub-title {
+        font-size: 12px;
+    }
+
+    .textoCimientos {
+        font-size: 40px;
+        padding: 20% 10%;
+    }
+
+    .fermatHome_espacio .section-content {
+        padding: 10%;
+    }
+
+    .comodidad .section-title {
+        font-size: 44px;
+        text-align: center;
+
+    }
+
+    .diferencias .section-title,
+    .diferencias .section-title-2 {
+        padding: 5%;
+        text-align: center;
+    }
+
+    .diferencias .otras {
+        padding: 5% 15%;
+    }
+
+    .contact-form .section-title {
+        color: #d91982;
+        padding: 5%;
+        text-align: center;
+        font-weight: 700;
+        font-size: 44px;
+        font-family: "Roboto";
+    }
+
+    .dis-table {
+        display: inline-block;
+        width: 100vw;
+    }
+
+
+}
+
+/*------------------------------  for extra-small (mobile) screen -------------------------*/
+
+@media (max-width: 767px) {
+    .custom-navbar-default {
+        padding: 15px 0px;
+    }
+
+    .navbar-default .navbar-brand {
+        font-size: 30px;
+    }
+
+    .owl-carousel {
+        margin-top: 80px;
+    }
+
+    .owl-carousel .owl-wrapper,
+    .owl-carousel .owl-item:nth-child(1) .item,
+    .owl-carousel .owl-wrapper,
+    .owl-carousel .owl-item:nth-child(2) .item,
+    .owl-carousel .owl-wrapper,
+    .owl-carousel .owl-item:nth-child(3) .item {
+        background-position: center;
+    }
+
+    .owl-theme .owl-controls .owl-buttons .owl-prev {
+        right: 20%;
+    }
+
+    .owl-theme .owl-controls .owl-buttons .owl-next {
+        right: 5%;
+    }
+
+    .header-title {
+        font-size: 45px;
+        margin-bottom: 5px;
+    }
+
+    .header-sub-title {
+        margin-left: 3px;
+    }
+
+
+    .section-content-title {
+        font-size: 50px;
+    }
+
+    .section-header {
+        padding-top: 0px;
+    }
+
+    .section-title {
+        font-size: 40px;
+        padding: 18% 10%;
+    }
+
+    .textoCimientos {
+        font-size: 40px;
+        padding: 20% 10%;
+    }
+
+    .comodidad .section-title {
+        font-size: 44px;
+        text-align: center;
+
+    }
+
+    .diferencias .section-title,
+    .diferencias .section-title-2 {
+        padding: 5%;
+        text-align: center;
+    }
+
+    .diferencias .otras {
+        padding: 5% 15%;
+    }
+
+    .fermatHome_espacio .section-content {
+        padding: 10%;
+    }
+
+    .contact-form .section-title {
+        font-size: 44px;
+    }
+
+
+    .opening-time {
+        margin-top: 25px;
+    }
+
+    .contact .section-content {
+        padding: 70px 0px;
+    }
+
+    .dis-table .dis-table-cell {
+
+        width: 100vw;
+    }
+
+}
