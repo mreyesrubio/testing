@@ -9,7 +9,7 @@
         paginationSpeed : 400,
         singleItem: true,
         autoPlay: true,
-        pagination: false,
+        pagination: true,
 
         // "singleItem:true" is a shortcut for:
         // items : 1, 
@@ -52,32 +52,6 @@ wow.init();
 	    });
 	});
 
-	
-/*====================================================================
-            Navbar shrink script
-======================================================================*/
-/*$(document).ready(function() {
-    $(window).scroll(function() {
-        if ($(document).scrollTop() > 50) {
-            $('nav').addClass('shrink');
-        } 
-        else {
-            $('nav').removeClass('shrink');
-        }
-    });
-});
-*/
-
-/*$(document).ready(function(){
-    $(window).scroll(function() {
-        if ($(document).scrollTop() > 50) {
-            $("#logo").attr("src", "assets/images/Logo_stick.png")
-        }
-        else {
-             $("#logo").attr("src", "assets/images/Logo_main.png")
-        }
-    });
-});*/
 /*=================================================================
             Load more button
 ===================================================================*/

@@ -28,6 +28,11 @@ body {
     border-radius: 0;
     letter-spacing: 2px;
 }
+.btn-send{
+    background-color: lightgrey;
+    border-radius: 20px;
+    width: 50%;
+}
 
 .btn:hover {
     transition: all 0.3s ease-in-out;
@@ -349,7 +354,7 @@ nav.shrink .navbar-toggle {
 ||				Somos
 ==================================================*/
 .somos .section-bg {
-    background: url("../images/firmas-fermat-2-alt.png");
+    background:;
     background-repeat: no-repeat, no-repeat;
 
     background-position: 51% 58%, 75% 58%;
@@ -358,8 +363,13 @@ nav.shrink .navbar-toggle {
 .section-content-para2 span{
     color:#e5444a;
     font-weight: bolder;
+    font-size: 28px;
 }
 
+.imgLogoFermat{
+    width: 30vw;
+    margin: 20% 0 0 20%;
+}
 /*=================================================
 ||				Construyamos
 ==================================================*/
@@ -412,6 +422,11 @@ nav.shrink .navbar-toggle {
   color: #83a7a5;
   padding-top: 4%;
 }
+
+/*=================================================
+||              Frase Creación
+==================================================*/
+
 
 
 /*=================================================
@@ -470,6 +485,18 @@ nav.shrink .navbar-toggle {
     display: block;
     z-index: 999;
     top: -20px;
+}
+
+.datosDeContacto{
+    font-size: 20px;
+    font-family: OpenSans;
+    padding-top: 4%;
+    color: #d91982;
+
+}
+
+.mobile{
+    text-align: right;
 }
 
 /*=================================================
@@ -772,4 +799,8 @@ footer a:hover {
     padding: 10% 5% 10% 5%;
 
 }
+.mobile{
+    text-align: left;
 }
+}
+
